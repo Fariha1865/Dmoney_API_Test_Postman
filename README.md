@@ -18,7 +18,7 @@
 - Customer will check balance after sending money
 - Make payment to Merchant from Customer 2
 - Check customer 2 and Merchant balance after payment
-- Cancel transaction as Admin
+- Delete a user as Admin
 
 ## How to run this project
 
