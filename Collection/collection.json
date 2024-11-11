@@ -4887,6 +4887,182 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Admin User Delete",
+			"item": [
+				{
+					"name": "Positive",
+					"item": [
+						{
+							"name": "Login with Admin for token generation",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = pm.response.json()\r",
+											"var token = jsonData.token;\r",
+											"pm.collectionVariables.set(\"Token\", token)\r",
+											"\r",
+											"pm.test(\"Successful Login with Valid Email and Password\", function () {\r",
+											"    var jsonData = pm.response.json();\r",
+											"    pm.expect(jsonData.message).to.contains(\"Login successful\");\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"admin@roadtocareer.net\",\r\n    \"password\":\"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{Base_URL}}/user/login",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"user",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete User Successfully",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify user deleted successfully\",()=>{\r",
+											"    var jsonData= pm.response.json();\r",
+											"    var message= jsonData.message;\r",
+											"    pm.expect(message).contains(\"User deleted successful\")\r",
+											"})\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "text"
+									},
+									{
+										"key": "X-AUTH-SECRET-KEY",
+										"value": "{{Secret_Key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/user/delete/{{Customer-1_Id}}",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"user",
+										"delete",
+										"{{Customer-1_Id}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Negetive",
+					"item": [
+						{
+							"name": "Delete User with invalid id",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.test(\"Verify user is not found to delete with invalid user id\",()=>{\r",
+											"    var jsonData= pm.response.json();\r",
+											"    var message= jsonData.message;\r",
+											"    pm.expect(message).contains(\"User not found\")\r",
+											"})\r",
+											"pm.test(\"Status code is 404\", function () {\r",
+											"    pm.response.to.have.status(404);\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer {{Token}}",
+										"type": "text"
+									},
+									{
+										"key": "X-AUTH-SECRET-KEY",
+										"value": "{{Secret_Key}}",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{Base_URL}}/user/delete/gsaf$%34",
+									"host": [
+										"{{Base_URL}}"
+									],
+									"path": [
+										"user",
+										"delete",
+										"gsaf$%34"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
 		}
 	],
 	"event": [
