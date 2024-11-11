@@ -23,7 +23,7 @@
 - hit following commands
 
 ``` npm i ```
-``` npm run test:dev```
+``` npm run test:dev``` or 
 ``` npm run test:qa```
 
 ## prerequisites
@@ -36,15 +36,13 @@ https://documenter.getpostman.com/view/23406180/2s83KW9PHq
 
 ## Output
 **Run on QA Environment:**
-![image](https://github.com/user-attachments/assets/32c1b444-7896-4f9d-a126-a2d5921b9746)
+![image](https://github.com/user-attachments/assets/ac173c33-983d-461d-b5e1-5206a1799142)
 
 **Run on Dev Environment:**
-![image](https://github.com/user-attachments/assets/b32ff2a8-df2f-447a-bcf3-89f854429b50)
+![image](https://github.com/user-attachments/assets/c0232a94-2575-45bc-95c9-e836053d7450)
 
 
-![image](https://github.com/user-attachments/assets/94e35e89-9436-45a8-83ae-75e3837fe5e0)
-
-
+![image](https://github.com/user-attachments/assets/e9c17c4b-ab6b-4804-97b5-dfc3d92d3310)
 
 
 ![Newman_Requests](https://user-images.githubusercontent.com/54511128/192147515-c8ec9e1b-1483-4d14-b80f-08144d970439.png)
