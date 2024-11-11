@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node report.js"
+    "test": "node report.js",
+    "test:dev": "node report.js dev",
+    "test:qa": "node report.js qa"
   },
   "keywords": [],
   "author": "",

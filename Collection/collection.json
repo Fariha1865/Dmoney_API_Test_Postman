@@ -31,7 +31,12 @@
 											"\r",
 											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
-											"});"
+											"});\r",
+											"\r",
+											"\r",
+											"\r",
+											"\r",
+											""
 										],
 										"type": "text/javascript",
 										"packages": {}
@@ -4881,123 +4886,98 @@
 	],
 	"variable": [
 		{
-			"key": "Base_URL",
-			"value": "http://dmoney.roadtocareer.net",
-			"type": "string"
-		},
-		{
 			"key": "Token",
-			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiYWRtaW5Acm9hZHRvY2FyZWVyLm5ldCIsInJvbGUiOiJBZG1pbiIsImlhdCI6MTczMDk5Njk0NiwiZXhwIjoxNzMxMDAwNTQ2fQ.pp_coGyEMXH2uNSuXuVSXyuxMvfSupdvyHiFZQ0utUw"
-		},
-		{
-			"key": "Secret_Key",
-			"value": "ROADTOSDET",
-			"type": "string"
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGlmaWVyIjoiVmFsZW50aW5lLkdveWV0dGU2NUB5YWhvby5jb20iLCJyb2xlIjoiTWVyY2hhbnQiLCJpYXQiOjE3MzEyNjMzMTUsImV4cCI6MTczMTI2NjkxNX0.IA6D3xWGnOjA9fOMegn78znr8mYtjOlyOQMprG5GEgA"
 		},
 		{
 			"key": "Customer-1_Id",
-			"value": 6886,
+			"value": 27284,
 			"type": "string"
 		},
 		{
 			"key": "Customer-2_Id",
-			"value": 6887,
+			"value": 27285,
 			"type": "string"
 		},
 		{
 			"key": "Customer-1_Phone_number",
-			"value": "688-209-8570"
+			"value": "51007612719"
 		},
 		{
 			"key": "Customer-2_Phone_number",
-			"value": "578-374-0063",
+			"value": "14475127812",
 			"type": "string"
 		},
 		{
 			"key": "Agent_Phone_number",
-			"value": "767-681-8608",
+			"value": "24558592550",
 			"type": "string"
 		},
 		{
 			"key": "Agent_Id",
-			"value": 6888,
-			"type": "string"
-		},
-		{
-			"key": "C_1_RandomId",
-			"value": 743978,
-			"type": "string"
-		},
-		{
-			"key": "C_2_RandomId",
-			"value": 919448,
+			"value": 27286,
 			"type": "string"
 		},
 		{
 			"key": "Agent_RandomId",
-			"value": 449613,
+			"value": 44097356,
 			"type": "string"
 		},
 		{
 			"key": "RandomId",
-			"value": 7775,
-			"type": "string"
-		},
-		{
-			"key": "delete_user",
-			"value": 6896,
+			"value": 5207,
 			"type": "string"
 		},
 		{
 			"key": "small_phone_number",
-			"value": 841,
+			"value": 743,
 			"type": "string"
 		},
 		{
 			"key": "Agent_Balance",
-			"value": 4000,
+			"value": 3927,
 			"type": "string"
 		},
 		{
 			"key": "Customer_1_Balance",
-			"value": 1490,
+			"value": 45,
 			"type": "string"
 		},
 		{
 			"key": "randomPhoneNumber",
-			"value": ""
+			"value": 45804628918
 		},
 		{
 			"key": "Merchant_RandomId",
-			"value": ""
+			"value": 67366859
 		},
 		{
 			"key": "Merchant_Id",
-			"value": ""
+			"value": 27287
 		},
 		{
 			"key": "Merchant_Phone_number",
-			"value": ""
+			"value": "45804628918"
 		},
 		{
 			"key": "cus_1_email",
-			"value": ""
+			"value": "user1260@example.com"
 		},
 		{
 			"key": "random_amount",
-			"value": ""
+			"value": 3927
 		},
 		{
 			"key": "transaction_id",
-			"value": ""
+			"value": "TXN37476"
 		},
 		{
 			"key": "Merchant_email",
-			"value": ""
+			"value": "Valentine.Goyette65@yahoo.com"
 		},
 		{
 			"key": "Merchant_password",
-			"value": ""
+			"value": "wblWr3j8usQvq5I"
 		}
 	]
 }
