@@ -7,15 +7,18 @@
 
 ## Scenario of this project
 
-- Admin creates an agent and random 2 customer
-- Give some money from SYSTEM account to the agent
+- Admin creates an agent, a Merchant and random 2 customers
+- Deposit some money from SYSTEM account to the agent
 - Agent checks balance after deposit
 - Agent deposit to any of 1 customer
 - The customer checks balance
 - Agent check balance after deposit to customer
-- Then withdraw any amount from the agent
-- And send money to the other customer
+- Then withdraw any amount from the agent with Customer 1
+- And send money to the  customer 2 from customer 1
 - Customer will check balance after sending money
+- Make payment to Merchant from Customer 2
+- Check customer 2 and Merchant balance after payment
+- Cancel transaction as Admin
 
 ## How to run this project
 
